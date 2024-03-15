@@ -62,22 +62,50 @@ int main(){
     // }
 
     //numeric pattern
+    // int n;
+    // cout<<"Enter the list that how many big u want to print : ";
+    // cin>>n;
+    // for(int i = 0; i < n;i++){
+    //     char ch;
+    //     for(int j = 0; j <= i;j++){
+    //         int number = j+1;
+    //         ch = number + 'A' - 1;
+    //         cout<<ch<<" ";
+    //     }
+    //     for(char alphabet = ch;alphabet>'A';){
+    //         alphabet = alphabet - 1;
+    //         cout<<alphabet<<" ";
+    //     }
+    //     cout<<endl;
+    // }
+
+
+    //FANCY PATTERN
     int n;
-    cout<<"Enter the list that how many big u want to print : ";
+    cout<<"Enter the number of the pattern that how big you want to print : ";
     cin>>n;
+
     for(int i = 0; i < n;i++){
-        char ch;
-        for(int j = 0; j <= i;j++){
-            int number = j+1;
-            ch = number + 'A' - 1;
-            cout<<ch<<" ";
-        }
-        for(char alphabet = ch;alphabet>'A';){
-            alphabet = alphabet - 1;
-            cout<<alphabet<<" ";
-        }
+        int k = 1;
+            for(int j = 0 ; j <= (3*n+n/2);j++){
+                if(j>=0 && j<=(n+2-i) || j>=n+5+i && j<=(3*n+2)){
+                cout<<"* ";
+                }
+                // else if(j>=(n+3)-i && j<=(n+3)+i){
+                 
+                //     if(k%2){
+                //         cout<<(i+1)<<" ";
+                //     }
+                //     else{
+                //     cout<<"* ";
+                //     }
+                //     k++;
+                // }
+                else{
+                cout<<"  ";
+                }
+            }
         cout<<endl;
     }
-
 return 0;
 }

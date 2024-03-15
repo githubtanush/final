@@ -24,10 +24,19 @@ int main(){
     // int ans = a << 2;
     // cout<<ans<<endl;
 
-    int num = -100;
-    cout<<(num>>1)<<endl;
-    unsigned int n = -100;
-    cout<<(n>>1);
+    // int num = -100;
+    // cout<<(num>>1)<<endl;
+    // unsigned int n = -100;
+    // cout<<(n>>1);
+
+
+    bool a = 1;
+    cout<<(~a)<<endl;//In these cout assume that ~a is an integer
+
+    bool b = 1;
+    bool c = (~b);
+    cout<<c<<endl;//In this it cannot assume because we give that c is boolean
+    
 
 return 0;
 }
