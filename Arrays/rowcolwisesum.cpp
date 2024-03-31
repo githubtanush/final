@@ -27,7 +27,7 @@ void rowwiseSum(int arr[1000][1000],int row,int col){
     }
 }
 
-void diagonalsum(int arr[1000][1000],int row,int col){
+void diagonalsum(int arr[1000][1000],int row){
     int sum = 0;
     for(int i = 0; i < row;i++){
         sum = sum + arr[i][i];
@@ -60,7 +60,7 @@ int main(){
     inputarray(crr,row,col);
     rowwiseSum(crr,row,col);
     colwisesum(crr,row,col);
-    diagonalsum(crr,row,col);
+    diagonalsum(crr,row);
     transpose(crr,row,col);
 return 0;
 }
